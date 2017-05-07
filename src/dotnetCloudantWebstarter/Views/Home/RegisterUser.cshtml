@@ -1,0 +1,58 @@
+﻿@model CloudantDotNet.Models.UserModel
+
+@{
+    @using (Html.BeginForm("LoginUser", "Home", Model, FormMethod.Post))
+    {
+
+        <div>
+            <h3> New User Registration</h3>
+            <table style="width:100%">
+                <tr>
+                    <td width="30%" align="right">@Html.LabelFor(model => model.UserName)</td>
+                    <td align="left">@Html.TextBoxFor(model => model.UserName, new { style = "width:250px;" })</td>
+                </tr>
+                <tr>
+                    <td width="30%" align="right">@Html.LabelFor(model => model.Password)</td>
+                    <td align="left">@Html.PasswordFor(model => model.Password, new { style = "width:250px;" })</td>
+                </tr>
+                <tr>
+                    <td width="30%" align="right">@Html.Label("Reenter Password")</td>
+                    <td align="left">@Html.PasswordFor(model => model.Password, new { style = "width:250px;" })</td>
+                </tr>
+                <tr>
+                    <td width="30%" align="right">@Html.LabelFor(model => model.UserType)</td>
+                    <td align="left">
+                        @Html.DropDownListFor(model => model.UserType, new List<SelectListItem>
+{
+    new SelectListItem{ Text="Retailer", Value = "1" },
+    new SelectListItem{ Text="Delivery Person", Value = "2" }
+
+ })
+                </td>
+            </tr>
+            <tr>
+                <td width="30%" align="right">@Html.LabelFor(model => model.EmailID)</td>
+                <td align="left">@Html.TextBoxFor(model => model.EmailID, new { style = "width:250px;" })</td>
+            </tr>
+            <tr>
+                <td width="30%" align="right">@Html.LabelFor(model => model.Address)</td>
+                <td align="left">@Html.TextBoxFor(model => model.Address, new { style = "width:250px;" })</td>
+            </tr>
+            <tr>
+                <td width="30%" align="right">@Html.LabelFor(model => model.BankName)</td>
+                <td align="left">@Html.TextBoxFor(model => model.BankName, new { style = "width:250px;" })</td>
+            </tr>
+            <tr>
+                <td width="30%" align="right">@Html.LabelFor(model => model.AccountNumber)</td>
+                <td align="left">@Html.TextBoxFor(model => model.AccountNumber, new { style = "width:250px;" })</td>
+            </tr>
+            <tr>
+                <td width="30%" align="right"></td>
+                <td align="left"><input type="submit" value="Register" /></td>
+            </tr>
+
+        </table>
+    </div>
+    }
+
+}

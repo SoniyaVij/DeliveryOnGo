@@ -1,0 +1,51 @@
+﻿@model CloudantDotNet.Models.AddProductModel
+
+@{
+    <script type="text/javascript" src="~/scripts/util.js"></script>
+    <script type="text/javascript" src="~/scripts/AddParcel.js"></script>
+    <h2>Add Parcel details</h2>
+    <table style="width:100%; border-bottom-width:0px" >
+        <tr><td></td><td> </td></tr>
+        <tr><td></td><td> </td></tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.DeleiveryAddress)</td>
+            <td align="left">@Html.TextBoxFor(model => model.DeleiveryAddress, new { style = "width:250px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.DeleiveryPinCode)</td>
+            <td align="left">@Html.TextBoxFor(model => model.DeleiveryPinCode, new { style = "width:150px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.ParcelLocation)</td>
+            <td align="left">@Html.TextBoxFor(model => model.ParcelLocation, new { style = "width:250px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.ParcelLocationPinCode)</td>
+            <td align="left">@Html.TextBoxFor(model => model.ParcelLocationPinCode, new { style = "width:150px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.DateofDelivery)</td>
+            <td align="left">@Html.TextBoxFor(model => model.DateofDelivery, new { style = "width:150px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.PickUpDate)</td>
+            <td align="left">@Html.TextBoxFor(model => model.PickUpDate, new { style = "width:150px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.PickUpDate)</td>
+            <td align="left">@Html.TextBoxFor(model => model.PickUpDate, new { style = "width:150px;" })</td>
+        </tr>
+        <tr>
+            <td width="30%" align="right">@Html.LabelFor(model => model.DeliveryCharge)</td>
+            <td align="left">@Html.TextBoxFor(model => model.DeliveryCharge, new { style = "width:100px;" })</td>
+        </tr>
+    </table>
+    <div>
+        <button class='addBtn' onclick="saveChange(this)" title='add record'>
+            <img src='~/images/add.png' alt='add' />
+        </button>
+    </div>
+    
+
+
+}

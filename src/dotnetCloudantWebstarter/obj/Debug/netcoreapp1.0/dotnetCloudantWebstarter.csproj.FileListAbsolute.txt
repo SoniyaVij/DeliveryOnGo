@@ -1,0 +1,16 @@
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.deps.json
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.runtimeconfig.json
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.runtimeconfig.dev.json
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.dll
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.pdb
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\obj\Debug\netcoreapp1.0\dotnetCloudantWebstarter.AssemblyInfo.cs
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\obj\Debug\netcoreapp1.0\dotnetCloudantWebstarter.dll
+C:\Users\IBM_ADMIN\Desktop\BlueMix\NEw\TestASPCore_Real\src\dotnetCloudantWebstarter\obj\Debug\netcoreapp1.0\dotnetCloudantWebstarter.pdb
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.deps.json
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.runtimeconfig.json
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.runtimeconfig.dev.json
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.dll
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\bin\Debug\netcoreapp1.0\dotnetCloudantWebstarter.pdb
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\obj\Debug\netcoreapp1.0\dotnetCloudantWebstarter.AssemblyInfo.cs
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\obj\Debug\netcoreapp1.0\dotnetCloudantWebstarter.dll
+C:\Users\IBM_ADMIN\Desktop\Bluemix\TestASPCore_Real\src\dotnetCloudantWebstarter\obj\Debug\netcoreapp1.0\dotnetCloudantWebstarter.pdb
