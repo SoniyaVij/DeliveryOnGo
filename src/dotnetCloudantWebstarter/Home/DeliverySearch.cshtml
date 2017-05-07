@@ -1,0 +1,27 @@
+﻿@model List<CloudantDotNet.Models.AddProductModel>
+
+@{
+
+    @using (Html.BeginForm("Search", "Home", Model, FormMethod.Post))
+    {
+        <div>
+            <h3> New User Registration</h3>
+            <table style="width:100%">
+                <tr>
+                    <td align="right" width="10%">@Html.Label("Search Using: ")</td>
+                    <td align="Left" width="15%">
+                        @Html.DropDownList("UserType", new List<SelectListItem>
+{
+    new SelectListItem{ Text="Location", Value = "1" },
+    new SelectListItem{ Text="Pin Code", Value = "2" }
+
+
+ })
+                    </td>
+                    <td align="right" >@Html.Label("Enter Search value : ")</td>
+                    <td align="left">@Html.TextBox("SearchValue", new { style = "width:450px;" })</td>
+                </tr>
+            </table>
+        </div>
+    }
+}

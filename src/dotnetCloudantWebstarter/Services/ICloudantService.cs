@@ -5,10 +5,10 @@ namespace CloudantDotNet.Services
 {
     public interface ICloudantService
     {
-        Task<dynamic> CreateAsync(AddProductModel item);
-        Task<dynamic> DeleteAsync(AddProductModel item);
+        Task<dynamic> CreateAsync(ToDoItem item);
+        Task<dynamic> DeleteAsync(ToDoItem item);
         Task<dynamic> GetAllAsync();
         Task PopulateTestData();
-        Task<string> UpdateAsync(AddProductModel item);
+        Task<string> UpdateAsync(ToDoItem item);
     }
 }

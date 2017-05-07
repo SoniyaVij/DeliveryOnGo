@@ -18,7 +18,7 @@ namespace CloudantDotNet.Services
             _cloudantCreds = creds;
         }
 
-        public async Task<dynamic> CreateAsync(AddProductModel item)
+        public async Task<dynamic> CreateAsync(ToDoItem item)
         {
             using (var client = CloudantClient())
             {
@@ -34,11 +34,11 @@ namespace CloudantDotNet.Services
             }
         }
 
-        public async Task<dynamic> DeleteAsync(AddProductModel item)
+        public async Task<dynamic> DeleteAsync(ToDoItem item)
         {
             using (var client = CloudantClient())
             {
-                var response = await client.DeleteAsync(_dbName + "/" + item.DeleiveryAddress + "?DeleiveryPinCode=" + item.DeleiveryPinCode);
+                var response = await client.DeleteAsync(_dbName + "/" + item.id + "?rev=" + item.rev);
                 if (response.IsSuccessStatusCode)
                 {
                     var responseJson = await response.Content.ReadAsAsync<ToDoItem>();
@@ -65,11 +65,11 @@ namespace CloudantDotNet.Services
             }
         }
 
-        public async Task<string> UpdateAsync(AddProductModel item)
+        public async Task<string> UpdateAsync(ToDoItem item)
         {
             using (var client = CloudantClient())
             {
-                var response = await client.PutAsJsonAsync(_dbName + "/" + item.DeleiveryAddress + "?rev=" + item.DeleiveryPinCode, item);
+                var response = await client.PutAsJsonAsync(_dbName + "/" + item.id + "?rev=" + item.rev, item);
                 if (response.IsSuccessStatusCode)
                 {
                     var responseJson = await response.Content.ReadAsAsync<ToDoItem>();
@@ -92,9 +92,9 @@ namespace CloudantDotNet.Services
                     response = await client.PutAsync(_dbName, null);
                     if (response.IsSuccessStatusCode)
                     {
-                        Task t1 = CreateAsync(JsonConvert.DeserializeObject<AddProductModel>("{ 'text': 'Sample 1' }"));
-                        Task t2 = CreateAsync(JsonConvert.DeserializeObject<AddProductModel>("{ 'text': 'Sample 2' }"));
-                        Task t3 = CreateAsync(JsonConvert.DeserializeObject<AddProductModel>("{ 'text': 'Sample 3' }"));
+                        Task t1 = CreateAsync(JsonConvert.DeserializeObject<ToDoItem>("{ 'text': 'Sample 1' }"));
+                        Task t2 = CreateAsync(JsonConvert.DeserializeObject<ToDoItem>("{ 'text': 'Sample 2' }"));
+                        Task t3 = CreateAsync(JsonConvert.DeserializeObject<ToDoItem>("{ 'text': 'Sample 3' }"));
                         await Task.WhenAll(t1, t2, t3);
                     }
                     else

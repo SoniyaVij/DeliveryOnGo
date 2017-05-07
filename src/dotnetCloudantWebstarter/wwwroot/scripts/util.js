@@ -28,8 +28,7 @@ function xhrGet(url, callback, errback){
 	xhr.ontimeout = errback;
 	xhr.send();
 }
-function xhrPut(url, data, callback, errback) {
-    debugger;
+function xhrPut(url, data, callback, errback){
 	var xhr = new createXHR();
 	xhr.open("PUT", url, true);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

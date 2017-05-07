@@ -16,7 +16,7 @@ namespace CloudantDotNet.Models
         public DateTime DateofDelivery { get; set; }
         public decimal DeliveryCharge	{ get; set; }
 	    public List<AddProductModel> AlreadyAddedParcels = new List<AddProductModel>();
-
-
+        public String Status { get; set; }
+        public string SearchField { get; set;  }
     }
 }

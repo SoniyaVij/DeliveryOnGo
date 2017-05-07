@@ -1,0 +1,40 @@
+﻿@model CloudantDotNet.Models.UserModel
+
+@{
+    @using (Html.BeginForm("LoginUser", "Home", Model, FormMethod.Post))
+    {
+
+        <div>
+            <table style="width:100%">
+                <tr>
+                    <td width="30%" align="right">@Html.LabelFor(model => model.UserName)</td>
+                    <td align="left">@Html.TextBoxFor(model => model.UserName, new { style = "width:250px;" })</td>
+                </tr>
+                <tr>
+                    <td width="30%" align="right">@Html.LabelFor(model => model.Password)</td>
+                    <td align="left">@Html.PasswordFor(model => model.Password, new { style = "width:250px;" })</td>
+                </tr>
+                <tr>
+                    <td align="right">@Html.LabelFor(model => model.UserType)</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.UserType, new List<SelectListItem>
+{
+    new SelectListItem{ Text="Retailer", Value = "1" },
+    new SelectListItem{ Text="Delivery Person", Value = "2" }
+
+ })
+                    </td>
+                </tr>
+                <tr>
+                    <td width="30%" align="right"></td>
+                    <td align="left"><input type="submit" value="Login" /></td>
+                </tr>
+                <tr>
+                    <td width="30%" align="right"></td>
+                    <td align="left">@Html.ActionLink("NewUserRegistration", "NewUserRegistration", "Home")</td>
+                </tr>
+            </table>
+        </div>
+    }
+
+}

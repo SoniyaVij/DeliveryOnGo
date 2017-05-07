@@ -26,7 +26,6 @@ function loadItems() {
 }
 
 function addItem(item, isNew) {
-    alert("Hi");
     var row = document.createElement('tr');
     var id = item && item._id;
     var rev = item && item._rev;
@@ -70,7 +69,6 @@ function onKey(evt) {
 }
 
 function saveChange(contentNode, callback) {
-    debugger;
     var row = contentNode.parentNode.parentNode;
     var id = row.getAttribute('data-id');
     var rev = row.getAttribute('data-rev');
